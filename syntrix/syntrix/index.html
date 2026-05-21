@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#05070D" />
+  <meta name="color-scheme" content="dark" />
+
+  <title>Syntrix — Sistemas inteligentes para empresas que querem escalar</title>
+  <meta name="description" content="Syntrix constrói plataformas, automações e agentes de IA que reduzem operação manual e aceleram resultados. Cloud, DevOps e arquitetura enterprise." />
+  <meta name="keywords" content="IA, automação, agentes de IA, cloud, devops, transformação digital, plataforma corporativa, syntrix" />
+  <meta name="author" content="Syntrix" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Syntrix — Advanced AI & Enterprise Autonomy" />
+  <meta property="og:description" content="Plataformas, automações e agentes de IA para empresas que querem escalar." />
+  <meta property="og:image" content="./assets/og-image.jpg" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Syntrix — Advanced AI & Enterprise Autonomy" />
+  <meta name="twitter:description" content="Plataformas, automações e agentes de IA para empresas que querem escalar." />
+  <meta name="twitter:image" content="./assets/og-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/favicon.png" />
+  <link rel="apple-touch-icon" href="./assets/favicon.png" />
+
+  <!-- Fonts: Space Grotesk (display) + JetBrains Mono (mono) + Geist Sans alt via Inter Tight -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Syntrix",
+    "url": "https://syntrix.ai",
+    "logo": "./assets/favicon.png",
+    "description": "Plataformas, automações e agentes de IA para empresas que querem escalar.",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__hex"></div>
+      <div class="loader__label">SYNTRIX</div>
+    </div>
+  </div>
+
+  <!-- Background grid + noise -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-noise" aria-hidden="true"></div>
+  <div class="bg-gradient" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand" aria-label="Syntrix — home">
+        <svg viewBox="0 0 40 44" class="nav__mark" aria-hidden="true">
+          <defs>
+            <linearGradient id="navG" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#67E8F9" />
+              <stop offset="100%" stop-color="#2563EB" />
+            </linearGradient>
+          </defs>
+          <path d="M20 2 L36 11 L36 33 L20 42 L4 33 L4 11 Z" fill="none" stroke="url(#navG)" stroke-width="1.6" />
+          <circle cx="20" cy="22" r="2.4" fill="#67E8F9" />
+          <circle cx="20" cy="2"  r="1.4" fill="#67E8F9" />
+          <circle cx="36" cy="11" r="1.4" fill="#67E8F9" />
+          <circle cx="36" cy="33" r="1.4" fill="#67E8F9" />
+          <circle cx="20" cy="42" r="1.4" fill="#67E8F9" />
+          <circle cx="4"  cy="33" r="1.4" fill="#67E8F9" />
+          <circle cx="4"  cy="11" r="1.4" fill="#67E8F9" />
+          <line x1="20" y1="22" x2="20" y2="2"  stroke="url(#navG)" stroke-width="1" />
+          <line x1="20" y1="22" x2="36" y2="11" stroke="url(#navG)" stroke-width="1" />
+          <line x1="20" y1="22" x2="36" y2="33" stroke="url(#navG)" stroke-width="1" />
+          <line x1="20" y1="22" x2="20" y2="42" stroke="url(#navG)" stroke-width="1" />
+          <line x1="20" y1="22" x2="4"  y2="33" stroke="url(#navG)" stroke-width="1" />
+          <line x1="20" y1="22" x2="4"  y2="11" stroke="url(#navG)" stroke-width="1" />
+        </svg>
+        <span class="nav__word">SYNTRIX</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#como-funciona">Processo</a>
+        <a href="#cases">Cases</a>
+        <a href="#stack">Stack</a>
+      </nav>
+
+      <div class="nav__cta">
+        <a href="#contato" class="btn btn--ghost">Falar com especialista</a>
+        <a href="#contato" class="btn btn--primary">Agendar diagnóstico <span aria-hidden="true">→</span></a>
+      </div>
+
+      <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav__mobile" id="navMobile" aria-hidden="true">
+      <a href="#servicos">Serviços</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#como-funciona">Processo</a>
+      <a href="#cases">Cases</a>
+      <a href="#stack">Stack</a>
+      <a href="#contato" class="btn btn--primary">Agendar diagnóstico →</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <canvas id="neuralCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="hero__orb hero__orb--a" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--b" aria-hidden="true"></div>
+      <div class="hero__scanline" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <div class="hero__pill" data-reveal>
+          <span class="pulse"></span>
+          <span>Advanced AI & Enterprise Autonomy</span>
+          <span class="hero__pill-sep">·</span>
+          <span class="hero__pill-mono">v.2026</span>
+        </div>
+
+        <h1 class="hero__title" data-reveal data-reveal-delay="80">
+          <span class="line">Sistemas inteligentes</span>
+          <span class="line">para empresas que</span>
+          <span class="line line--accent">querem escalar.</span>
+        </h1>
+
+        <p class="hero__sub" data-reveal data-reveal-delay="240">
+          Criamos plataformas, automações e <em>agentes de IA</em> que reduzem operação manual
+          e aceleram resultados. Arquitetura enterprise, cloud-native, prontos para escala global.
+        </p>
+
+        <div class="hero__cta" data-reveal data-reveal-delay="360">
+          <a href="#contato" class="btn btn--primary btn--lg">
+            Agendar diagnóstico
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contato" class="btn btn--outline btn--lg">
+            Falar com especialista
+          </a>
+        </div>
+
+        <div class="hero__meta" data-reveal data-reveal-delay="480">
+          <div class="hero__meta-item">
+            <span class="hero__meta-num">99.99%</span>
+            <span class="hero__meta-lbl">Uptime SLA</span>
+          </div>
+          <div class="hero__meta-sep"></div>
+          <div class="hero__meta-item">
+            <span class="hero__meta-num">SOC 2</span>
+            <span class="hero__meta-lbl">Security ready</span>
+          </div>
+          <div class="hero__meta-sep"></div>
+          <div class="hero__meta-item">
+            <span class="hero__meta-num">24/7</span>
+            <span class="hero__meta-lbl">Observability</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating dashboard mockup -->
+      <div class="hero__panel" data-reveal data-reveal-delay="640" aria-hidden="true">
+        <div class="panel">
+          <div class="panel__head">
+            <div class="panel__dots"><span></span><span></span><span></span></div>
+            <div class="panel__title">syntrix.console <span class="panel__tag">live</span></div>
+            <div class="panel__time" id="panelTime">--:--:--</div>
+          </div>
+          <div class="panel__body">
+            <div class="panel__col">
+              <div class="panel__kpi">
+                <span class="panel__kpi-lbl">Agents online</span>
+                <span class="panel__kpi-val" data-counter="1284">0</span>
+              </div>
+              <div class="panel__kpi">
+                <span class="panel__kpi-lbl">Tasks resolved (24h)</span>
+                <span class="panel__kpi-val" data-counter="48732">0</span>
+              </div>
+              <div class="panel__kpi">
+                <span class="panel__kpi-lbl">Avg latency</span>
+                <span class="panel__kpi-val">128 <small>ms</small></span>
+              </div>
+            </div>
+            <div class="panel__col panel__col--chart">
+              <svg viewBox="0 0 320 120" class="spark" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="sparkFill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.45"/>
+                    <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <path class="spark__area" d="M0,90 L20,80 L40,84 L60,70 L80,72 L100,55 L120,60 L140,42 L160,48 L180,30 L200,38 L220,22 L240,28 L260,14 L280,20 L300,8 L320,12 L320,120 L0,120 Z" fill="url(#sparkFill)"/>
+                <path class="spark__line" d="M0,90 L20,80 L40,84 L60,70 L80,72 L100,55 L120,60 L140,42 L160,48 L180,30 L200,38 L220,22 L240,28 L260,14 L280,20 L300,8 L320,12" fill="none" stroke="#67E8F9" stroke-width="1.5" />
+              </svg>
+              <div class="panel__legend">
+                <span><i style="background:#67E8F9"></i> Throughput</span>
+                <span><i style="background:#2563EB"></i> Predicted</span>
+              </div>
+            </div>
+          </div>
+          <div class="panel__foot">
+            <div class="logline"><span class="logline__t">12:48:02</span> <span class="logline__lvl logline__lvl--ok">OK</span> agent.<span class="mono">finance-bot</span> · invoice batch processed (218 items)</div>
+            <div class="logline"><span class="logline__t">12:48:09</span> <span class="logline__lvl logline__lvl--info">INF</span> infra.<span class="mono">eu-west-1</span> · autoscale +2 nodes</div>
+            <div class="logline"><span class="logline__t">12:48:14</span> <span class="logline__lvl logline__lvl--ok">OK</span> agent.<span class="mono">support-copilot</span> · ticket #4831 resolved</div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#servicos" class="hero__scroll" aria-label="Rolar para serviços">
+        <span class="hero__scroll-line"></span>
+        <span class="hero__scroll-lbl">scroll</span>
+      </a>
+    </section>
+
+    <!-- ================= MARQUEE ================= -->
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>AGENTS·</span><span>AUTOMATION·</span><span>CLOUD-NATIVE·</span><span>DEVOPS·</span>
+        <span>OBSERVABILITY·</span><span>PLATFORM ENGINEERING·</span><span>ENTERPRISE AI·</span>
+        <span>AGENTS·</span><span>AUTOMATION·</span><span>CLOUD-NATIVE·</span><span>DEVOPS·</span>
+        <span>OBSERVABILITY·</span><span>PLATFORM ENGINEERING·</span><span>ENTERPRISE AI·</span>
+      </div>
+    </section>
+
+    <!-- ================= SERVIÇOS ================= -->
+    <section class="services section" id="servicos">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <span class="eyebrow"><span class="eyebrow__dot"></span>O que fazemos</span>
+          <h2 class="section__title">Três frentes, uma arquitetura: <span class="grad">autonomia operacional</span>.</h2>
+          <p class="section__sub">
+            Combinamos inteligência artificial aplicada, engenharia de software de ponta e
+            infraestrutura cloud para construir sistemas que operam por conta própria.
+          </p>
+        </header>
+
+        <div class="services__grid">
+          <!-- Card 1 -->
+          <article class="card card--service" data-reveal data-reveal-delay="80">
+            <div class="card__halo"></div>
+            <div class="card__num">01</div>
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="24" cy="24" r="6"/>
+                <circle cx="8" cy="14" r="2.5"/>
+                <circle cx="40" cy="14" r="2.5"/>
+                <circle cx="8" cy="34" r="2.5"/>
+                <circle cx="40" cy="34" r="2.5"/>
+                <circle cx="24" cy="6" r="2.5"/>
+                <circle cx="24" cy="42" r="2.5"/>
+                <path d="M18.5 22 L10 15 M29.5 22 L38 15 M18.5 26 L10 33 M29.5 26 L38 33 M24 18 L24 8 M24 30 L24 40"/>
+              </svg>
+            </div>
+            <h3 class="card__title">IA & Automação</h3>
+            <p class="card__desc">Automatizamos processos operacionais usando agentes de IA inteligentes e workflows modernos.</p>
+            <ul class="card__list">
+              <li>Agentes de IA</li>
+              <li>Automação WhatsApp</li>
+              <li>Atendimento inteligente</li>
+              <li>IA para documentos</li>
+              <li>Copilotos corporativos</li>
+            </ul>
+            <div class="card__foot">
+              <span class="card__tag">LLMs · RAG · Agents</span>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card card--service" data-reveal data-reveal-delay="180">
+            <div class="card__halo"></div>
+            <div class="card__num">02</div>
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+                <rect x="4" y="8"  width="40" height="10" rx="2"/>
+                <rect x="4" y="22" width="22" height="18" rx="2"/>
+                <rect x="30" y="22" width="14" height="8" rx="2"/>
+                <rect x="30" y="34" width="14" height="6" rx="2"/>
+                <line x1="8" y1="13" x2="12" y2="13"/>
+                <line x1="8" y1="28" x2="22" y2="28"/>
+                <line x1="8" y1="32" x2="18" y2="32"/>
+                <line x1="8" y1="36" x2="20" y2="36"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Sistemas Inteligentes</h3>
+            <p class="card__desc">Criamos sistemas modernos, rápidos e escaláveis sob medida para o seu negócio.</p>
+            <ul class="card__list">
+              <li>Dashboards executivos</li>
+              <li>Portais internos</li>
+              <li>ERP customizado</li>
+              <li>CRM inteligente</li>
+              <li>Plataformas operacionais</li>
+            </ul>
+            <div class="card__foot">
+              <span class="card__tag">Next.js · TypeScript · Postgres</span>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card card--service" data-reveal data-reveal-delay="280">
+            <div class="card__halo"></div>
+            <div class="card__num">03</div>
+            <div class="card__icon">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M14 28 a8 8 0 1 1 4 -15.4 a10 10 0 0 1 18 6.4 a6 6 0 0 1 -2 11.5 H14"/>
+                <path d="M18 36 L18 42 M24 34 L24 44 M30 36 L30 42"/>
+              </svg>
+            </div>
+            <h3 class="card__title">Cloud & Infraestrutura</h3>
+            <p class="card__desc">Arquitetura cloud moderna com foco em performance, segurança e escalabilidade.</p>
+            <ul class="card__list">
+              <li>AWS · GCP · Azure</li>
+              <li>Terraform / IaC</li>
+              <li>DevOps & CI/CD</li>
+              <li>Observabilidade</li>
+              <li>Automação de infra</li>
+            </ul>
+            <div class="card__foot">
+              <span class="card__tag">K8s · Terraform · Datadog</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DIFERENCIAIS ================= -->
+    <section class="diff section" id="diferenciais">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <span class="eyebrow"><span class="eyebrow__dot"></span>Diferenciais</span>
+          <h2 class="section__title">Engenharia que <span class="grad">opera por você</span>.</h2>
+          <p class="section__sub">Não vendemos hora de desenvolvedor. Entregamos sistemas que rodam, escalam e geram resultado mensurável.</p>
+        </header>
+
+        <div class="diff__metrics" data-reveal>
+          <div class="metric">
+            <div class="metric__num"><span data-counter="70" data-suffix="%">0</span></div>
+            <div class="metric__lbl">Menos operação manual</div>
+            <div class="metric__bar"><div class="metric__bar-fill" style="--w:70%"></div></div>
+          </div>
+          <div class="metric">
+            <div class="metric__num"><span data-counter="3" data-suffix="x">0</span></div>
+            <div class="metric__lbl">Mais velocidade operacional</div>
+            <div class="metric__bar"><div class="metric__bar-fill" style="--w:85%"></div></div>
+          </div>
+          <div class="metric">
+            <div class="metric__num"><span>∞</span></div>
+            <div class="metric__lbl">Automação inteligente em escala</div>
+            <div class="metric__bar"><div class="metric__bar-fill" style="--w:100%"></div></div>
+          </div>
+        </div>
+
+        <div class="diff__grid">
+          <div class="bullet" data-reveal data-reveal-delay="60">
+            <div class="bullet__ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4"/></svg>
+            </div>
+            <h3>Arquitetura enterprise</h3>
+            <p>Stack desenhada para alta carga, multi-região, multi-tenant e compliance corporativo.</p>
+          </div>
+          <div class="bullet" data-reveal data-reveal-delay="120">
+            <div class="bullet__ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18M3 12h18"/></svg>
+            </div>
+            <h3>IA aplicada ao negócio real</h3>
+            <p>Modelos e agentes resolvendo problemas operacionais reais — não demos de laboratório.</p>
+          </div>
+          <div class="bullet" data-reveal data-reveal-delay="180">
+            <div class="bullet__ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3>Segurança & escalabilidade</h3>
+            <p>Criptografia em trânsito e repouso, RBAC, logs auditáveis e infraestrutura imutável.</p>
+          </div>
+          <div class="bullet" data-reveal data-reveal-delay="240">
+            <div class="bullet__ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h4v4H4zM10 10h4v4h-4zM16 16h4v4h-4z"/><path d="M8 6h2M14 12h2"/></svg>
+            </div>
+            <h3>Automação de ponta</h3>
+            <p>Workflows orquestrados, agentes autônomos e pipelines event-driven em produção.</p>
+          </div>
+          <div class="bullet" data-reveal data-reveal-delay="300">
+            <div class="bullet__ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2"/><path d="M3 20c0-3 3-5 6-5s6 2 6 5M14 20c0-2 2-3 4-3s4 1 4 3"/></svg>
+            </div>
+            <h3>Time especializado</h3>
+            <p>Engenheiros sêniores em IA, cloud e plataforma — sem intermediários, sem agência.</p>
+          </div>
+          <div class="bullet" data-reveal data-reveal-delay="360">
+            <div class="bullet__ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+            </div>
+            <h3>Foco em resultado</h3>
+            <p>Cada entrega é medida por impacto operacional — não por linhas de código ou tickets fechados.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COMO FUNCIONA ================= -->
+    <section class="how section" id="como-funciona">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <span class="eyebrow"><span class="eyebrow__dot"></span>Como funciona</span>
+          <h2 class="section__title">Do problema à <span class="grad">escala global</span>.</h2>
+          <p class="section__sub">Um processo enxuto, transparente e validado em cada etapa.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__step" data-reveal>
+            <div class="timeline__node"><span>01</span></div>
+            <div class="timeline__card">
+              <h3>Diagnóstico</h3>
+              <p>Imersão técnica e operacional. Mapeamos gargalos, fluxos e oportunidades de automação.</p>
+              <div class="timeline__chips"><span>workshop</span><span>data audit</span><span>roadmap</span></div>
+            </div>
+          </li>
+          <li class="timeline__step" data-reveal data-reveal-delay="80">
+            <div class="timeline__node"><span>02</span></div>
+            <div class="timeline__card">
+              <h3>Estratégia</h3>
+              <p>Desenho de arquitetura, escolha de stack e definição de KPIs operacionais e financeiros.</p>
+              <div class="timeline__chips"><span>arquitetura</span><span>stack</span><span>KPIs</span></div>
+            </div>
+          </li>
+          <li class="timeline__step" data-reveal data-reveal-delay="160">
+            <div class="timeline__node"><span>03</span></div>
+            <div class="timeline__card">
+              <h3>Desenvolvimento</h3>
+              <p>Engenharia em sprints com entregas semanais — código revisado, testado e versionado.</p>
+              <div class="timeline__chips"><span>sprints</span><span>CI/CD</span><span>QA</span></div>
+            </div>
+          </li>
+          <li class="timeline__step" data-reveal data-reveal-delay="240">
+            <div class="timeline__node"><span>04</span></div>
+            <div class="timeline__card">
+              <h3>Automação</h3>
+              <p>Implantação de agentes, workflows e integrações. Operação assistida por IA em produção.</p>
+              <div class="timeline__chips"><span>agentes</span><span>workflows</span><span>integrações</span></div>
+            </div>
+          </li>
+          <li class="timeline__step" data-reveal data-reveal-delay="320">
+            <div class="timeline__node timeline__node--last"><span>05</span></div>
+            <div class="timeline__card">
+              <h3>Escala</h3>
+              <p>Observabilidade contínua, otimização de custo e expansão para novos times e mercados.</p>
+              <div class="timeline__chips"><span>SRE</span><span>FinOps</span><span>growth</span></div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= CASES ================= -->
+    <section class="cases section" id="cases">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <span class="eyebrow"><span class="eyebrow__dot"></span>Cases</span>
+          <h2 class="section__title">Resultados que <span class="grad">se medem em horas</span>, não em meses.</h2>
+          <p class="section__sub">Exemplos representativos do tipo de impacto que entregamos.</p>
+        </header>
+
+        <div class="cases__grid">
+          <article class="case" data-reveal>
+            <div class="case__sector">Logística</div>
+            <div class="case__big">65<span>%</span></div>
+            <h3>Redução no tempo operacional usando IA</h3>
+            <p>Roteirização inteligente e agentes de IA classificando ocorrências em tempo real, integrados ao TMS legado.</p>
+            <div class="case__tags"><span>Agents</span><span>OCR</span><span>AWS</span></div>
+          </article>
+          <article class="case" data-reveal data-reveal-delay="120">
+            <div class="case__sector">Financeiro</div>
+            <div class="case__big">100<span>%</span></div>
+            <h3>Automação completa de atendimento interno</h3>
+            <p>Copiloto corporativo respondendo dúvidas de RH, TI e Operações com base em documentação interna versionada.</p>
+            <div class="case__tags"><span>RAG</span><span>LLM</span><span>Slack</span></div>
+          </article>
+          <article class="case" data-reveal data-reveal-delay="240">
+            <div class="case__sector">Varejo</div>
+            <div class="case__big">1<span>plataforma</span></div>
+            <h3>Centralização inteligente de operações</h3>
+            <p>Unificação de pedidos, estoque e atendimento omnichannel em uma plataforma única com IA preditiva de demanda.</p>
+            <div class="case__tags"><span>ERP</span><span>Forecast</span><span>K8s</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STACK ================= -->
+    <section class="stack section" id="stack">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <span class="eyebrow"><span class="eyebrow__dot"></span>Tecnologias</span>
+          <h2 class="section__title">A stack que sustenta <span class="grad">sistemas críticos</span>.</h2>
+          <p class="section__sub">Selecionamos tecnologias maduras, observáveis e cloud-native. Nada de hype sem propósito.</p>
+        </header>
+
+        <div class="stack__grid" data-reveal>
+          <div class="tech"><div class="tech__ico" data-svg="aws"></div><span>AWS</span></div>
+          <div class="tech"><div class="tech__ico" data-svg="docker"></div><span>Docker</span></div>
+          <div class="tech"><div class="tech__ico" data-svg="k8s"></div><span>Kubernetes</span></div>
+          <div class="tech"><div class="tech__ico" data-svg="terraform"></div><span>Terraform</span></div>
+          <div class="tech"><div class="tech__ico" data-svg="python"></div><span>Python</span></div>
+          <div class="tech"><div class="tech__ico" data-svg="openai"></div><span>OpenAI</span></div>
+          <div class="tech"><div class="tech__ico" data-svg="nextjs"></div><span>Next.js</span></div>
+          <div class="tech"><div class="tech__ico" data-svg="postgres"></div><span>PostgreSQL</span></div>
+          <div class="tech"><div class="tech__ico" data-svg="langchain"></div><span>LangChain</span></div>
+          <div class="tech"><div class="tech__ico" data-svg="fastapi"></div><span>FastAPI</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA FINAL ================= -->
+    <section class="cta section" id="contato">
+      <div class="container">
+        <div class="cta__box" data-reveal>
+          <div class="cta__grid-bg" aria-hidden="true"></div>
+          <div class="cta__glow" aria-hidden="true"></div>
+
+          <span class="eyebrow eyebrow--center"><span class="eyebrow__dot"></span>Próximo passo</span>
+          <h2 class="cta__title">Pronto para transformar sua operação?</h2>
+          <p class="cta__sub">A Syntrix ajuda empresas a evoluírem através de IA, automação e tecnologia moderna.</p>
+
+          <div class="cta__actions">
+            <a href="mailto:contato@syntrix.ai?subject=Agendar%20reuni%C3%A3o" class="btn btn--primary btn--lg">
+              Agendar reunião
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a href="mailto:contato@syntrix.ai?subject=Solicitar%20diagn%C3%B3stico" class="btn btn--outline btn--lg">
+              Solicitar diagnóstico
+            </a>
+          </div>
+
+          <div class="cta__trust">
+            <span>Resposta em até 24h úteis</span>
+            <span class="dot"></span>
+            <span>NDA disponível sob solicitação</span>
+            <span class="dot"></span>
+            <span>Atendimento global</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#top" class="nav__brand" aria-label="Syntrix">
+            <svg viewBox="0 0 40 44" class="nav__mark" aria-hidden="true">
+              <defs>
+                <linearGradient id="footG" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#67E8F9" />
+                  <stop offset="100%" stop-color="#2563EB" />
+                </linearGradient>
+              </defs>
+              <path d="M20 2 L36 11 L36 33 L20 42 L4 33 L4 11 Z" fill="none" stroke="url(#footG)" stroke-width="1.6" />
+              <circle cx="20" cy="22" r="2.4" fill="#67E8F9" />
+              <circle cx="20" cy="2"  r="1.4" fill="#67E8F9" />
+              <circle cx="36" cy="11" r="1.4" fill="#67E8F9" />
+              <circle cx="36" cy="33" r="1.4" fill="#67E8F9" />
+              <circle cx="20" cy="42" r="1.4" fill="#67E8F9" />
+              <circle cx="4"  cy="33" r="1.4" fill="#67E8F9" />
+              <circle cx="4"  cy="11" r="1.4" fill="#67E8F9" />
+              <line x1="20" y1="22" x2="20" y2="2"  stroke="url(#footG)" stroke-width="1" />
+              <line x1="20" y1="22" x2="36" y2="11" stroke="url(#footG)" stroke-width="1" />
+              <line x1="20" y1="22" x2="36" y2="33" stroke="url(#footG)" stroke-width="1" />
+              <line x1="20" y1="22" x2="20" y2="42" stroke="url(#footG)" stroke-width="1" />
+              <line x1="20" y1="22" x2="4"  y2="33" stroke="url(#footG)" stroke-width="1" />
+              <line x1="20" y1="22" x2="4"  y2="11" stroke="url(#footG)" stroke-width="1" />
+            </svg>
+            <span class="nav__word">SYNTRIX</span>
+          </a>
+          <p class="footer__tag">Advanced AI & Enterprise Autonomy.</p>
+          <p class="footer__motto">We engineer the systems that engineer the future.</p>
+        </div>
+
+        <div>
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#diferenciais">Diferenciais</a></li>
+            <li><a href="#como-funciona">Processo</a></li>
+            <li><a href="#cases">Cases</a></li>
+            <li><a href="#stack">Stack</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="mailto:contato@syntrix.ai">contato@syntrix.ai</a></li>
+            <li><a href="mailto:comercial@syntrix.ai">comercial@syntrix.ai</a></li>
+            <li>São Paulo · Brasil</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Social</h4>
+          <ul class="footer__social">
+            <li><a href="#" aria-label="LinkedIn">LinkedIn ↗</a></li>
+            <li><a href="#" aria-label="GitHub">GitHub ↗</a></li>
+            <li><a href="#" aria-label="X">X ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Syntrix Technologies. Todos os direitos reservados.</span>
+        <span class="footer__status"><span class="pulse pulse--green"></span> Todos os sistemas operacionais</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
